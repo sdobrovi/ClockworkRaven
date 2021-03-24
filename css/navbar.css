@@ -1,0 +1,87 @@
+nav {
+  text-align; left;
+
+}
+.navbar{
+  overflow: hidden;
+  background-color: #000000;
+  font-family: "Philospher";
+  position: fixed;
+}
+.navbar a{
+  float: left;
+  font-size: 30px;
+  color: #b97a00;
+  text-align: center;
+  padding: 14px 24px;
+  text-decoration: none;
+}
+
+.unitdrop, .herodrop, .housedrop, .playerdrop{
+  float:left;
+  overflow: hidden;
+}
+
+.unitdrop .unitbtn, .herodrop .herobtn, .housedrop .housebtn, .playerdrop .playerbtn{
+  font-size: 30px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #b97a00;
+  padding: 14px 24px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .unitdrop:hover .unitbtn, .herodrop:hover .herobtn, .housedrop:hover .housebtn, .playerdrop:hover .playerbtn{
+  background-color: #3c4470;
+}
+
+.unit-content, .hero-content, .house-content, .player-content{
+  display: none;
+  position: fixed;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0,0.5);
+  z-index: 1;
+}
+.unit-content a, .hero-content a, .house-content a, .player-content a{
+  float: none;
+  color: #3c4470
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align:center;
+}
+
+.unit-content a:hover, .hero-content a:hover, .house-content a:hover, .player-content a:hover{
+  background-color: #3c4470;
+}
+.unitdrop:hover .unit-content, .herodrop:hover .hero-content, .housedrop:hover .house-content, .playerdrop:hover .player-content{
+  display:block;
+}
+
+.header-banner{
+  display:flex;
+  justify-content: center;
+}
+
+.navbar{
+  position: absolute;
+  right: 0%;
+  left: 0%;
+
+}
+
+.homelink a{
+  padding: 0px 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.toto {
+  padding-top: 300px;
+  display:flex;
+  justify-content: center;
+}

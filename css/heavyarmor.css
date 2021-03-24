@@ -1,0 +1,56 @@
+.container{
+  display: grid;
+  grid-template-columns: auto 250px 250px 250px 250px 250px auto;
+  grid-template-rows:  200px 250px 250px 250px 250px 250px;
+  row-gap: 20px;
+}
+
+.longsword-icon{
+  grid-column: 2/3;
+  grid-row: 2 / 3;
+}
+
+.shortsword-icon{
+  grid-column: 3/4;
+  grid-row: 2 / 3;
+}
+
+.maul-icon{
+  grid-column: 4/5;
+  grid-row: 2 / 3;
+}
+
+/* .poleaxe-icon{
+  grid-column: 5/6;
+  grid-row: 2 / 3;
+} */
+
+.glaive-icon{
+  grid-column: 5/6;
+  grid-row: 2 / 3;
+}
+
+.longsword-image{
+  grid-column: 5/7;
+  grid-row: 3 / 4;
+}
+
+.shortsword-image{
+  grid-column: 2 / 4;
+  grid-row: 4 / 5;
+}
+
+.maul-image{
+  grid-column: 5/7;
+  grid-row: 5 / 6;
+
+}
+.glaive-image{
+  grid-column: 2 / 4;
+  grid-row: 6 / 7;
+  display: block;
+}
+.glaive-image img{
+  object-fit: scale-down;
+  overflow: hidden;
+}

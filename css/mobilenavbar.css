@@ -1,0 +1,175 @@
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+  font-family: "Philospher";
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #b97a00;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.active {
+  background-color: #000000;
+  color: white;
+  padding: 16px 16px;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+.herodrop, .housedrop, .unitdrop, .playerdrop {
+  float: left;
+  overflow: hidden;
+}
+
+.herodrop .herobtn, .housedrop .housebtn, .unitdrop .unitbtn, .playerdrop .playerbtn {
+  font-size: 24px;
+  border: none;
+  outline: none;
+  color: #b97a00;
+  padding: 14px 16px;
+  min-width: 200px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.hero-content, .house-content, .unit-content, .player-content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.hero-content a, .house-content a, .unit-content a, .player-content a {
+  float: none;
+  background-color: #000000;
+  color:#b97a00
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .herodrop:hover .herobtn, .housedrop:hover .housebtn, .unitdrop:hover .unitbtn, .playerdrop:hover .playerbtn {
+  background-color: #3c4470;
+  color: #b97a00;
+}
+
+.hero-content a:hover, .house-content a:hover, .unit-content a:hover, .player-content a:hover {
+  background-color: #3c4470;
+  color: #b97a00;
+}
+
+.herodrop:hover .hero-content, .housedrop:hover .house-content, .unitdrop:hover .unit-content, .playerdrop:hover .player-content {
+  display: block;
+  color: #b97a00;
+}
+.header-banner{
+  display:flex;
+  justify-content: center;
+  max-width: 300px;
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #3c4470;
+}
+
+/* .banner{
+  object-fit: scale-down;
+} */
+.toto {
+  padding-top: 100px;
+  display:flex;
+  justify-content: center;
+}
+
+.topnav.responsive {
+  position: relative;
+  overflow: hidden;
+}
+.topnav.responsive a.icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  text-align: left;
+  display:block;
+}
+.topnav.responsive .herodrop, .topnav.responsive .housedrop, .topnav.responsive .unitdrop, .topnav.responsive .playerdrop, {
+  float: none;
+  width: 100%;
+}
+.topnav.responsive .hero-content, .topnav.responsive .house-content, .topnav.responsive .unit-content, .topnav.responsive .player-content  {
+  position: relative;
+}
+.topnav.responsive .herodrop .herobtn, .topnav.responsive .housedrop .housebtn, .topnav.responsive .unitdrop .unitbtn, .topnav.responsive .playerdrop .playerbtn  {
+  display: block;
+  text-align: left;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .herodrop .herobtn, .housedrop .housebtn, .unitdrop .unitbtn, .playerdrop .playerbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+    overflow: hidden;
+  }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    text-align: left;
+    display:block;
+  }
+  .topnav.responsive .herodrop, .topnav.responsive .housedrop, .topnav.responsive .unitdrop, .topnav.responsive .playerdrop, {
+    float: none;
+    width: 100%;
+  }
+  .topnav.responsive .hero-content, .topnav.responsive .house-content, .topnav.responsive .unit-content, .topnav.responsive .player-content  {
+    position: relative;
+  }
+  .topnav.responsive .herodrop .herobtn, .topnav.responsive .housedrop .housebtn, .topnav.responsive .unitdrop .unitbtn, .topnav.responsive .playerdrop .playerbtn  {
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+/* .header-banner img{
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+} */
+
+/* .toto {
+  padding-top: 100px;
+  display:flex;
+  justify-content: center;
+} */
